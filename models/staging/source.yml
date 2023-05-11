@@ -1,0 +1,12 @@
+version: 2
+# https://docs.getdbt.com/docs/building-a-dbt-project/using-sources/
+# https://docs.getdbt.com/reference/source-properties/
+
+sources:
+  - name: shop
+    database: dbt-demo-384611
+    schema: source
+    tables:
+      - name: raw_customers
+      - name: raw_orders
+      - name: raw_payments

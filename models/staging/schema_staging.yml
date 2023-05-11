@@ -1,0 +1,30 @@
+
+version: 2
+
+models:
+  - name: stg_customers
+    description: "Our staged customers"
+    columns:
+      - name: id
+        description: "The primary key for this table"
+        tests:
+          - unique
+          - not_null
+
+  - name: stg_orders
+    description: "Our staged orders"
+    columns:
+      - name: id
+        description: "The primary key for this table"
+        tests:
+          - unique
+          - not_null
+
+  - name: stg_payments
+    description: "Our staged payments"
+    columns:
+      - name: id
+        description: "The primary key for this table"
+        tests:
+          - unique
+          - not_null

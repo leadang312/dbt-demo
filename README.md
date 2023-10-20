@@ -1,1 +1,2 @@
-An example implementation of a dbt project.
+# Dbt Tutorial
+Example dbt project

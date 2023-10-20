@@ -1,8 +1,16 @@
 
 version: 2
 
+groups:
+  - name: staging_models
+    owner:
+      name: Cool Team
+      email: lea.dang@y42.com
+
 models:
   - name: stg_customers
+    group: staging_models
+    access: public
     description: "Our staged customers"
     columns:
       - name: id
@@ -10,8 +18,10 @@ models:
         tests:
           - unique
           - not_null
-
+    
   - name: stg_orders
+    group: staging_models
+    access: public
     description: "Our staged orders"
     columns:
       - name: id
@@ -21,6 +31,8 @@ models:
           - not_null
 
   - name: stg_payments
+    group: staging_models
+    access: public
     description: "Our staged payments"
     columns:
       - name: id

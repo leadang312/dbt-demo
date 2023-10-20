@@ -1,0 +1,10 @@
+groups:
+  - name: mart_models
+    owner:
+      name: Customer Success Team
+      email: lea.dang@y42.com
+
+models:
+  - name: customers
+    group: mart_models
+    access: public
